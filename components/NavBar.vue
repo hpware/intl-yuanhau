@@ -29,12 +29,12 @@ const ff_on = () => {
           <!--Main Navagation-->
           <NuxtLink to="/" @click="ff_off"
             ><button alt="Home page">
-              <i class="bi bi-house"></i>首頁
+              <i class="bi bi-house"></i>Home
             </button></NuxtLink
           >
           <NuxtLink to="/about" @click="ff_off"
             ><button alt="About page">
-              <i class="bi bi-info-circle"></i>關於我
+              <i class="bi bi-info-circle"></i>About
             </button></NuxtLink
           >
           <NuxtLink to="/posts/" @click="ff_off"
@@ -44,17 +44,12 @@ const ff_on = () => {
           >
           <NuxtLink to=""
             ><button alt="Photo library">
-              <i class="bi bi-images"></i>相簿
+              <i class="bi bi-images"></i>Images
             </button></NuxtLink
           >
           <NuxtLink to="/recommendations" @click="ff_off"
             ><button alt="Blog">
-              <i class="bi bi-chat-left-text"></i>建議/聯絡
-            </button></NuxtLink
-          >
-          <NuxtLink to="/v3-pages/projects" @click="ff_off">
-            <button alt="Blog">
-              <i class="bi bi-node-plus-fill"></i>專案(v3)
+              <i class="bi bi-chat-left-text"></i> Contact
             </button></NuxtLink
           >
           <!--<NuxtLink to=""
@@ -63,7 +58,7 @@ const ff_on = () => {
             </button></NuxtLink
           >--->
           <a href="mailto:hw@yuanhau.com" target="_blank"
-            ><button alt="email"><i class="bi bi-inbox"></i>我的信箱</button></a
+            ><button alt="email"><i class="bi bi-inbox"></i>Email</button></a
           >
           <!--<a href="/user/login" class="login"><button alt="login"><i class="bi bi-person"></i>登入</button></a>-->
 

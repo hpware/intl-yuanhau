@@ -16,14 +16,8 @@ export default defineNuxtConfig({
     "/user/panel/**": { ssr: true },
     "/admin/": { redirect: "/admin/login" },
     "/admin/**": { ssr: true },
-    "/signal": { redirect: "https://yhw.tw/signal" }, // Compatibility with the Wordpresss version link aka https://yuanhau.com/signal
-    // Old Redirect stuff here.
-    "/post": { redirect: "/posts" },
-    "/post/**": { redirect: "/posts/**" },
-    // Sync the old with the new
     "/mdview/**": { ssr: true },
     "/en-about": { redirect: "/mdview/6" },
-    "/form/**": { ssr: true },
   },
 
   modules: [
@@ -48,9 +42,9 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: "https://yuanhau.com",
-    title: "吳元皓",
-    description: "吳元皓的個人網站",
+    url: "https://intl.yuanhau.com",
+    title: "Howard's Personal Website",
+    description: "This is Howard's Personal Website for International plaforms, Chinese verison on https://yuanhau.com, If you do understand chinese, there is where to visit.",
   },
 
   sitemap: {},
@@ -58,7 +52,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: {
-        lang: "zh-Hant",
+        lang: "en-US",
       },
       link: [
         { rel: "dns-prefetch", href: "https://utfs.io" },
@@ -76,30 +70,30 @@ export default defineNuxtConfig({
         {
           name: "keywords",
           content:
-            "吳元皓, 吳元皓的個人網站, 吳元皓的個人網站首頁, Howard Wu, yuanhau, wuyuanhau, yuanhau.com, yuanh.xyz, Yuan-Hau Wu, 吳元皓, 元皓, 吳元皓, 吳元浩, 元浩, 吳元浩, 吳元浩, 五專生, ictechz, 台灣的五專生, 吴元皓, 吴元皓的网站,吴元浩,元浩,吴元浩的网站,吴元浩,五专生,ictechz,摄影,前端方面, 個人資料連結",
+            "Howard Wu, yuanhau, wuyuanhau, yuanhau.com, yuanh.xyz, Yuan-Hau Wu",
         },
-        { name: "author", content: "吳元皓" },
+        { name: "author", content: "howard" },
         { name: "author-email", content: "hw@yuanhau.com" },
-        { name: "copyright", content: "吳元皓" },
+        { name: "copyright", content: "howard" },
         { name: "twitter:creator", content: "@ictechz" },
-        { name: "twitter:site", content: "https://yuanhau.com" },
+        { name: "twitter:site", content: "https:/intl.yuanhau.com" },
         { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:title", content: "吳元皓" },
-        { name: "twitter:description", content: "吳元皓的個人網站" },
+        { name: "twitter:title", content: "Howard" },
+        { name: "twitter:description", content: "Howard's Personal Website." },
         { name: "twitter:image", content: "https://yuanhau.com/favicon.jpg" },
-        { name: "og:title", content: "吳元皓" },
-        { name: "og:description", content: "吳元皓的個人網站" },
+        { name: "og:title", content: "Howard" },
+        { name: "og:description", content: "Howard's Personal Website." },
         { name: "og:image", content: "https://yuanhau.com/favicon.jpg" },
         { name: "og:url", content: "https://yuanhau.com" },
-        { name: "og:site_name", content: "吳元皓" },
+        { name: "og:site_name", content: "Howard" },
         { name: "og:type", content: "website" },
-        { name: "og:locale", content: "zh_TW" },
+        { name: "og:locale", content: "en-US" },
         {
           name: "og:keywords",
           content:
-            "吳元皓, 吳元皓的個人網站, 吳元皓的個人網站首頁, Howard Wu, yuanhau, wuyuanhau, yuanhau.com, yuanh.xyz, Yuan-Hau Wu, 吳元皓, 元皓, 吳元皓, 吳元浩, 元浩, 吳元浩, 吳元浩, 五專生, ictechz, 台灣的五專生, 吴元皓, 吴元皓的网站,吴元浩,元浩,吴元浩的网站,吴元浩,五专生,ictechz,摄影,前端方面, 個人資料連結",
+            "Howard Wu, yuanhau, wuyuanhau, yuanhau.com, yuanh.xyz, Yuan-Hau Wu",
         },
-        { name: "og:author", content: "吳元皓" },
+        { name: "og:author", content: "Howard" },
         { name: "og:author:email", content: "hw@yuanhau.com" },
         { "http-equiv": "X-UA-Compatible", content: "IE=edge" },
       ],
