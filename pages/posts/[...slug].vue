@@ -41,12 +41,12 @@ const copylink = async () => {
         <article>
           <h1 class="title">{{ doc.title }}</h1>
           <div class="meta">
-            <span>最後編輯: {{ formatDate(doc.ldate) }}</span>
+            <span>Last edited: {{ formatDate(doc.ldate) }}</span>
           </div>
           <ContentRenderer :value="doc" class="content" />
         </article>
         <p class="share">
-          分享連結:
+          Link:
           <span v-if="link"
             >{{ link }}
             <button @click="copylink()" v-if="!clipboardthingy">
@@ -54,7 +54,7 @@ const copylink = async () => {
             </button>
             <button v-if="clipboardthingy"><i class="bi bi-check"></i></button>
           </span>
-          <span v-else-if="!link">創立中...</span>
+          <span v-else-if="!link">Creating...</span>
         </p>
         <div class="comments">
           <!--Remove load on Giscus Server (maybe github)-->
@@ -69,7 +69,7 @@ const copylink = async () => {
             emit-metadata="0"
             input-position="bottom"
             theme="cobalt"
-            lang="zh-TW"
+            lang="en-US"
             loading="lazy"
             crossorigin="anonymous"
             async
@@ -86,13 +86,13 @@ const copylink = async () => {
             Built using <a href="https://nuxtjs.org">NuxtJS</a> &
             <a href="https://giscus.app">Giscus.</a>
           </p>
-          <p class="end">我的網站，我的規則</p>
+          <p class="end">My website, My rules.</p>
         </div>
       </template>
       <template #not-found>
         <h1>>_<</h1>
-        <h2>沒有這個文章</h2>
-        <a href="/blog"><button>返回Blog主頁</button></a>
+        <h2>This page does not exist.</h2>
+        <a href="/blog"><button>Go back.</button></a>
       </template>
     </ContentDoc>
   </main>

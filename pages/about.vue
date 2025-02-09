@@ -5,7 +5,7 @@ import { animate } from "motion";
 import "~/components/markdown.css";
 import Loading from "~/components/loading/discordstyle.vue";
 useHead({
-  title: "關於我 | 吳元皓",
+  title: "關於我 | yuanhau intl.",
   link: [
     {
       rel: "prefetch",
@@ -26,7 +26,7 @@ async function getCodingHistoryMD() {
   } catch (e) {
     throw createError({
       statusCode: 500,
-      message: "錯誤: " + e,
+      message: "Error: " + e,
     });
     loading.value = false;
   } finally {

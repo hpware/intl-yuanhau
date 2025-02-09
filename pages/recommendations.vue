@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import LoadingAnimation from "@/components/loading/discordstyle.vue";
-useHead({
-  title: "建議 | 吳元皓",
-});
 const loading = ref();
 const dchandle_matrix = ref();
 const email = ref();

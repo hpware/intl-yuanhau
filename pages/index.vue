@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: "首頁 | 吳元皓",
+  title: "首頁 | yuanhau intl.",
 });
 // Init
 import { ref, onMounted } from "vue";
@@ -56,33 +56,30 @@ function dyothertext() {
     return "IG: yh_.5_26";
   }
 }
-othercooltext.value = dyothertext();
+othercooltext.value = "";
 </script>
 <template>
   <div class="background">
     <section id="aboutme" class="about">
       <br />
       <img
-        alt="大頭貼"
+        alt="Profile Picture."
         class="pfp"
         draggable="false"
         src="/img/pfp-1.jpg"
         v-lazy-load
       />
       <h2 class="mbmt0">
-        <span style="margin-bottom: 0em" id="zhname">吳元皓</span>
+        <span style="margin-bottom: 0em" id="zhname">Howard</span>
       </h2>
       <DiscordStatus />
-      <p class="mbmt0">
-        嗨! 我是一個五專生，我對<a href="/images/" style="color: white">攝影</a
-        >與前端(與後端)方面有興趣。 <br />習慣並熟悉使用 VueJS, Git &
-        Debian(Ubuntu)<br />
+      <p class="mbmt0">Hi, I'm a Taiwanese student currently studying Computer stuff. Like Ubuntu & Coding Swift & Javascript<br />
         <span>{{ othercooltext }}</span>
         <!--<span>2024結束了...</span>-->
       </p>
       <h3 class="buttons">
         <NuxtLink class="not-a-button profilebutton" href="/about"
-          >關於我</NuxtLink
+          >About</NuxtLink
         >|<NuxtLink class="not-a-button profilebutton" to="/posts/"
           >Blog</NuxtLink
         ><!--|暫用<a
@@ -90,7 +87,7 @@ othercooltext.value = dyothertext();
           href="/v3-pages/projects"
           >專案(v3)</a
         >-->|<NuxtLink class="not-a-button profilebutton" to="/images/"
-          >照片</NuxtLink
+          >Images</NuxtLink
         >
       </h3>
       <p class="socials">

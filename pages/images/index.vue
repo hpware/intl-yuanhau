@@ -7,7 +7,7 @@ const loading = ref(true);
 const groupimg = ref<Record<string, any[]>>({});
 
 useSeoMeta({
-  title: "我的相簿 | 吳元皓",
+  title: "Images | yuanhau intl.",
 });
 
 async function getList() {

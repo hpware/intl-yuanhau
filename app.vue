@@ -11,10 +11,10 @@ import { defineProps, ref, onMounted } from "vue";
     <NuxtPage />
     <footer>
       <p style="text-align: center; font-size: 0.6em">
-        Copyright © {{ new Date().getFullYear() }} 吳元皓
+        Copyright © {{ new Date().getFullYear() }} yuanhau
       </p>
     </footer>
-    <noscript>這個網站必需要使用 JavaScript 才能運作</noscript>
+    <noscript>This website requires javascript.</noscript>
   </NuxtLayout>
 </template>
 <style scoped>
