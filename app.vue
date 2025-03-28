@@ -8,7 +8,7 @@ const announce = ref(false);
 const animationComplete = ref(false);
 
 onMounted(() => {
-  data.value = "測試";
+  data.value = "This verison of the website, is currently being discontiued at the end of the year. Please go to <a href='https://yhw.tw/yuanhaucombeta'>the new beta verison</a>.";
   announce.value = true;
 
   setTimeout(() => {
